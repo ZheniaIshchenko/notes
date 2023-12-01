@@ -1,0 +1,96 @@
+.sign-in {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-window {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  filter: drop-shadow(#323232 3px 3px 5px);
+}
+.sign-in-window .title {
+  text-align: center;
+}
+.sign-in-window .title > h1 {
+  margin: 0;
+}
+.sign-in-window .error-message {
+  color: #de2828;
+  font-size: 10px;
+}
+.sign-in-window > form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.sign-in-window > form .provider.active {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  transform: scale(100%);
+  transition: 0.3s;
+  box-shadow: none;
+}
+.sign-in-window > form .provider.active > label {
+  color: #414141;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.sign-in-window > form .provider.active > label:first-child {
+  margin-top: 0px;
+}
+.sign-in-window > form .provider.active > input {
+  outline: none;
+  border: 1px #6f6f6f solid;
+  border-radius: 2px;
+}
+.sign-in-window > form .provider {
+  background-color: rgba(226, 226, 226, 0.5);
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  transform: scale(70%);
+  transition: 0.3s;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 20px rgba(226, 226, 226, 0.5);
+}
+.sign-in-window > form .provider > label {
+  color: #777777;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.sign-in-window > form .provider > label:first-child {
+  margin-top: 0px;
+}
+.sign-in-window > form .provider > input {
+  outline: none;
+  border: 1px #b1b1b1 solid;
+  border-radius: 2px;
+}
+.sign-in-window > form #email-sign-in {
+  transform-origin: bottom;
+}
+.sign-in-window > button {
+  height: 50px;
+  width: 120px;
+  border: none;
+  margin-top: 15px;
+  color: #ffffff;
+  background-color: #37bd3b;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.sign-in-window > button:hover {
+  background-color: #4bd950;
+}

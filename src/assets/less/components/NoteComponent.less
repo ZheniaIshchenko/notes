@@ -1,0 +1,82 @@
+.note{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    position: fixed;
+    filter: drop-shadow( rgb(50, 50, 50) 3px 3px 5px);
+
+    .dragbar{
+        height: 20px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 2px 7px;
+        background-color: #F9D949;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .dropdown{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .dropdown-content{
+                width: 100px;
+                position: absolute;
+                visibility: hidden;
+
+                .category {
+                    border-bottom:rgb(32, 32, 32) 1px solid;
+                }
+                .category:last-child{
+                    border: none;
+                    border-bottom: none;
+                }
+            }
+            .dropdown-content.active{
+                background-color: rgb(255, 255, 255);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                visibility: visible;
+                box-shadow: rgb(50, 50, 50) 1px 1px 5px;
+            }
+            .dropdown-button{
+                height: 100%;
+                line-height: 21px;
+                padding: 0px;
+                border: none;
+                background: none;
+            }
+        }
+        .dropdown img{
+            color:wheat
+        }
+        .close-button{
+            padding: 0px;
+            border: none;
+            background: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .dragbar img{
+        width:  15px;
+    }
+    .text-field{
+        box-sizing: border-box;
+        height: 226px;
+        width: 200px;
+    }
+    .text-field textarea{
+        box-sizing: border-box;
+        height: 226px;
+        width: 200px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+        outline: none;
+        resize: none;
+    }    
+        
+}

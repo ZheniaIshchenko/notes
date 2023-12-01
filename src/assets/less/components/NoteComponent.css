@@ -1,0 +1,77 @@
+.note {
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  position: fixed;
+  filter: drop-shadow(#323232 3px 3px 5px);
+}
+.note .dragbar {
+  height: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 2px 7px;
+  background-color: #F9D949;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.note .dragbar .dropdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.note .dragbar .dropdown .dropdown-content {
+  width: 100px;
+  position: absolute;
+  visibility: hidden;
+}
+.note .dragbar .dropdown .dropdown-content .category {
+  border-bottom: #202020 1px solid;
+}
+.note .dragbar .dropdown .dropdown-content .category:last-child {
+  border: none;
+  border-bottom: none;
+}
+.note .dragbar .dropdown .dropdown-content.active {
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  visibility: visible;
+  box-shadow: #323232 1px 1px 5px;
+}
+.note .dragbar .dropdown .dropdown-button {
+  height: 100%;
+  line-height: 21px;
+  padding: 0px;
+  border: none;
+  background: none;
+}
+.note .dragbar .dropdown img {
+  color: wheat;
+}
+.note .dragbar .close-button {
+  padding: 0px;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.note .dragbar img {
+  width: 15px;
+}
+.note .text-field {
+  box-sizing: border-box;
+  height: 226px;
+  width: 200px;
+}
+.note .text-field textarea {
+  box-sizing: border-box;
+  height: 226px;
+  width: 200px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+}

@@ -1,0 +1,78 @@
+.categories{
+    height: 50px;
+    width: 100%;
+    background-color: #F45050;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow( rgb(50, 50, 50) 2px 2px 2px);
+
+    .category{
+        height: 100%;
+        width: 100%;
+        border-right: 3px solid #f36e6e;line-height: 18px;
+    }
+    .category button{
+        height: 100%;
+        width: 100%;
+        border: none;
+        color: #ffffff;
+        background-color: #F45050;
+        transition-duration: 0.3s;
+    }
+    .category button:hover{
+        background-color: #f54747;
+    }
+    .category button.active{
+        transition-duration: 0.3s;
+        text-decoration: underline;
+        background-color: #da3b3b;
+    }
+    .category button.active:hover{
+        background-color: #cf3434;
+    }
+    .category:last-child{
+        border: none;
+        border-right: none;
+    }
+    
+}
+.add-note-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    bottom:30px;
+    right:30px;
+    outline: none;
+    border: none;
+    background-color: rgb(55, 189, 59);
+    color: white;
+    transition-duration: 0.3s;
+    z-index: 99999999;
+    filter: drop-shadow(2px 2px 3px rgb(50, 50, 50));
+}
+.add-note-btn:hover{
+    background-color: rgb(80, 235, 85);
+    transform: scale(1.2);
+}
+.sign-out-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    bottom:30px;
+    left:30px;
+    font-size: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(189, 55, 55);
+    color: white;
+    transition-duration: 0.3s;
+    z-index: 99999999;
+    filter: drop-shadow(2px 2px 3px rgb(50, 50, 50));
+}
+.sign-out-btn:hover{
+    background-color: rgb(235, 80, 80);
+    transform: scale(1.2);
+}

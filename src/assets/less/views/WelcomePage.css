@@ -1,0 +1,64 @@
+.welcome {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-window {
+  background-color: aliceblue;
+  width: 550px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.welcome-window .welcome-text {
+  text-align: center;
+}
+.welcome-window .welcome-text h1 {
+  margin: 10px;
+}
+.welcome-window .description {
+  text-align: center;
+  color: #373737;
+}
+.welcome-window .description .warning {
+  color: #c72a2a;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0px 100px;
+  text-align: center;
+  border: #c72a2a 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px;
+}
+.welcome-window .description > p {
+  margin: 0px;
+}
+.welcome-window .sign-window {
+  width: 50%;
+  margin: 0px auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.welcome-window .sign-window .sign-in button {
+  background-color: #37bd3b;
+}
+.welcome-window .sign-window .sign-up button {
+  background-color: #3758bd;
+}
+.welcome-window .sign-window .sign-in button:hover {
+  background-color: #4bd950;
+}
+.welcome-window .sign-window .sign-up button:hover {
+  background-color: #4b6fd8;
+}
+.welcome-window .sign-window button {
+  height: 50px;
+  width: 120px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
